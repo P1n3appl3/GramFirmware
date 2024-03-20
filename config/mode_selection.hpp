@@ -44,22 +44,22 @@ void select_mode(CommunicationBackend *backend) {
             set_mode(
                 backend,
                 new ProjectM(
-                    socd::SOCD_2IP_NO_REAC,
+                    socd::SOCD_NEUTRAL,
                     { .true_z_press = false, .ledgedash_max_jump_traj = true }
                 )
             );
         } else if (inputs.down) {
-            set_mode(backend, new Ultimate(socd::SOCD_2IP));
+            set_mode(backend, new Ultimate(socd::SOCD_NEUTRAL));
         } else if (inputs.up2) {
-            set_mode(backend, new UltimateUSB(socd::SOCD_2IP)); 
+            set_mode(backend, new UltimateUSB(socd::SOCD_NEUTRAL)); 
         } else if (inputs.right) {
             set_mode(backend, new FgcMode(socd::SOCD_NEUTRAL, socd::SOCD_NEUTRAL));
         } else if (inputs.b) {
-            set_mode(backend, new RivalsOfAether(socd::SOCD_2IP));
+            set_mode(backend, new RivalsOfAether(socd::SOCD_NEUTRAL));
         } else if (inputs.x) {
             set_mode(
                 backend, 
-                new Melee20ButtonWASD(socd::SOCD_2IP_NO_REAC, { .crouch_walk_os = false }
+                new Melee20ButtonWASD(socd::SOCD_NEUTRAL, { .crouch_walk_os = false }
                 )
             );
         }
