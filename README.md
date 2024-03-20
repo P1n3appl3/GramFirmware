@@ -1,29 +1,13 @@
 # Gram Firmware (forked from HayBox)
 
 This is a branch of HayBox specifically made for [GRAM](https://gramctrl.com/) controllers. 
-Since the GRAM has a second Up input in it's WASD layout, most changes were made to accomadate that. 
-In all default modes, Up2 can be used as a D-Pad toggle for taunting. 
-Melee WASD Mode (Mod X + X + Start) uses Up2 as the up input, and the default Up as a D-Pad toggle. 
 
-Additionally, improvements were made to the FGC Mode and the Switch backend used to connect to consoles with the [Brook Wingman FGC](https://www.brookaccessory.com/products/wingmanfgc/index.html) adapter. 
-
-Pressing Mod Y in FGC Mode will change Start to the Home Button and Midshield to the Select button. It also turns WASD and C-Stick inputs into analog inputs (helpful for rotating the camera in many online lobbies or singleplayer modes.)
- 
- 
-## Guide to connect to a PS4 / PS5
-You need a Brook Wingman to get it to work, otherwise the console won't recognize the controller. 
- 
-Hold the X button when you plug in to get the Nintendo Switch Backend.
- 
-Switch to FGC Mode (Mod X + Right + Start) 
- 
-Hold Mod Y and press Start to access the home button. 
- 
-You should be good to go! 
+This branch changes all of the Smash modes to use Up2 for Up, Neutral SOCD, and Up as a taunt toggle. 
+Please use the master branch for the default layout. 
 
 
 
-## Original ReadMe below:
+Original ReadMe below:
 
 HayBox is a modular, cross-platform firmware for digital or mixed analog/digital controllers, primarily targeted at [B0XX](https://b0xx.com)-style controllers.
 
